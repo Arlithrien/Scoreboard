@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+body {
+  height: 80vh;
+  margin: 0;
+  display: grid;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+  place-items: center;
+  background-color: #fff;
+  
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.box {
+  width: 80vh;
+  height: 60vh;
+  background-color:#fff;
+  /* border:solid 2px; */
+  border-radius:14px;
+  /* display: flex; */
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: linear-gradient(125.83deg,
+  rgb(179, 141, 20) 0%, rgb(167, 18, 38) 99.09%)
+  
+  
+  
+
+}
+
+.box h1 {
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* margin: 0 0 0; */
+}
+
+.title {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* text-align: center; */
+  display:inline-block;
+  /* align-items:center; */
+  /* flex-grow:10; */
+  padding:10px;
+  width:100%;
+  height:5%;
+  line-height: 40px;
+  
+  /* justify-content: center; */
+  
+  
+  
+  
+  
+}
+.title h1 {
+  height:15%;
   color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* text-decoration:underline; */
+  margin: 0 3vh;
+  
+  
+  
+  
+}
+.title h2 {
+  color: white;
+  /* vertical-align:top; */
+  float:right;
+  margin: 0 10vh;
+  /* text-decoration:underline; */
+  
+  
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.middleContainer {
+  height:30vh;
+  display:flex;
+  flex-direction:row;
+  position:relative;
+  padding: 3%;
+  
+  
+
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.list {
+  color: black;
+  /* align: center; */
 }
+
+ /* middle-left container for the list of entries */
+.players {
+  flex-grow:5;
+  border: solid 10px;
+  border-color: white;
+  border-radius:15px;
+  background:#fff;
+  color:black;
+  
+}
+
+.table {
+  /* border-radius: 14px; */
+  width: 100%;
+  margin:1%;
+  
+}
+.table th {
+  border: 0px solid;
+  border-radius:14px;
+  color:white;
+  
+  
+  background: rgb(192, 105, 55);
+  
+  /* border-color:black; */
+}
+.table td {
+  font-weight:bold;
+  align-items: center;
+  border: 1px solid;
+  border-color:black;
+  border-width: 0px 0px 1px 0px;
+  /* background-color: #ccc; */
+  color:black;
+}
+  /* tr:nth-child(odd)   { background-color:#fff; }
+  tr:nth-child(even)    { background-color:#ccc; } */
+
+/* middle-right container for the input form */
+.form {
+  margin:1%;
+  flex-grow:2;
+  border: solid 4px;
+  border-color: #ddd;
+  border-radius: 15px;
+  background:transparent;
+  color:white;
+  padding: 3vh 2vh;
+  
+  
+ 
+}
+.form label{
+  
+  font-weight: bold;
+}
+.form input {
+  display:block;
+  margin:auto;
+  width: 20vh;
+  border-color: black;
+  border-width: 1px 1px 1px 1px;
+}
+.form button {
+  display:block;
+  margin:auto;
+  
+  
+}
+/* bottom container for stats */
+.stats {
+  color:black;
+  background-color: #fff;
+  border-radius: 14px;
+  border: solid 10px;
+  border-color:#000;
+  height:15vh;
+  flex-grow: 1;
+  border-width: 0px 0px 0px 0px;
+  
+  
+  margin: 25px 25px 25px 25px;
+  
+  
+}
+
+.stats h2 {
+  font-size:35px;
+  text-decoration:underline;
+  color: black;
+  margin: 0 3vh;
+  
+}
+ 
